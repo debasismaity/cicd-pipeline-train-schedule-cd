@@ -30,6 +30,8 @@ pipeline {
                                         removePrefix: 'dist/',
                                         remoteDirectory: '/tmp',
                                         execCommand: 'rm -rf /opt/train-schedule/* && unzip /tmp/trainSchedule.zip -d /opt/train-schedule'
+                                        execCommand: 'cd /opt/train-schedule'
+                                        execCommand: 'nohup /opt/train-schedule/gradlew npm_start &'
                                     )
                                 ]
                             )
@@ -62,6 +64,8 @@ pipeline {
                                         removePrefix: 'dist/',
                                         remoteDirectory: '/tmp',
                                         execCommand: 'rm -rf /opt/train-schedule/* && unzip /tmp/trainSchedule.zip -d /opt/train-schedule'
+                                        execCommand: 'cd /opt/train-schedule'
+                                        execCommand: 'nohup /opt/train-schedule/gradlew npm_start &'
                                     )
                                 ]
                             )
