@@ -29,9 +29,7 @@ pipeline {
                                         sourceFiles: 'dist/trainSchedule.zip',
                                         removePrefix: 'dist/',
                                         remoteDirectory: '/tmp',
-                                        execCommand: 'rm -rf /opt/train-schedule/* && unzip /tmp/trainSchedule.zip -d /opt/train-schedule'
-                                        execCommand: 'cd /opt/train-schedule'
-                                        execCommand: 'nohup /opt/train-schedule/gradlew npm_start &'
+                                        execCommand: 'rm -rf /opt/train-schedule/* && unzip /tmp/trainSchedule.zip -d /opt/train-schedule && cd /opt/train-schedule && nohup /opt/train-schedule/gradlew npm_start &'
                                     )
                                 ]
                             )
@@ -63,9 +61,7 @@ pipeline {
                                         sourceFiles: 'dist/trainSchedule.zip',
                                         removePrefix: 'dist/',
                                         remoteDirectory: '/tmp',
-                                        execCommand: 'rm -rf /opt/train-schedule/* && unzip /tmp/trainSchedule.zip -d /opt/train-schedule'
-                                        execCommand: 'cd /opt/train-schedule'
-                                        execCommand: 'nohup /opt/train-schedule/gradlew npm_start &'
+                                        execCommand: 'rm -rf /opt/train-schedule/* && unzip /tmp/trainSchedule.zip -d /opt/train-schedule && cd /opt/train-schedule && nohup /opt/train-schedule/gradlew npm_start &'
                                     )
                                 ]
                             )
